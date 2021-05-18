@@ -1,0 +1,10 @@
+{
+    "name": "alien-hunter",
+    "author": "Valer Danilenko",
+    "description": "Alien Shutter via vanilla js",
+    "private": false,
+    "scripts": {
+        "init": "npm install -g http-server",
+        "start": "http-server"
+    }
+}

@@ -1,26 +1,30 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 .wrap {
     width: 1240px;
     margin: 0 auto;
 }
+
 body {
-    background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+    background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
 }
+
 img {
     width: 100%;
 }
+
 .playground, .display {
     width: 100%;
 }
-.playground{
-    height: 600px;
+
+.playground {
+    min-height: 600px ;
     position: relative;
     overflow: hidden;
-    margin: 15px auto;
     background-image: url("./img/background.gif");
     background-position: center;
     background-size: 100%;
@@ -29,14 +33,14 @@ img {
     border-radius: 10px;
 }
 
-.alien{
+.alien {
     /*left: ;*/
     position: absolute;
     bottom: 0;
     transition: ease-out 2s;
 }
 
-.box{
+.box {
     /*left: ;*/
     position: absolute;
     top: -100%;
@@ -44,6 +48,7 @@ img {
     height: 70px;
     transition: ease-out 2s;
 }
+
 .target {
     width: 100px;
     height: 50px;
@@ -51,11 +56,13 @@ img {
     left: -100%;
     transition: ease-out 2s;
 }
+
 .target:hover,
 .alien:hover {
     cursor: url('./img/targ1.cur'), crosshair;
 
 }
+
 .point {
     display: flex;
     width: fit-content;
@@ -69,6 +76,7 @@ img {
     opacity: 0;
     transition: ease-in, 0.5s;
 }
+
 .point-img {
     width: 25px;
 }
@@ -76,9 +84,11 @@ img {
 .nlo {
     width: 100%;
 }
-.sup-box img{
+
+.sup-box img {
     width: 20px;
 }
+
 .menu-cont {
     display: flex;
     flex-wrap: wrap;
@@ -91,12 +101,14 @@ img {
     border-radius: 20px;
     font-family: monospace;
     text-transform: uppercase;
-    background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
 }
+
 .menu-cont img {
     width: 0px;
     transition: ease-out 1s;
 }
+
 .timer {
     position: absolute;
     left: 47%;
@@ -107,6 +119,7 @@ img {
     color: red;
     z-index: 99;
 }
+
 .alien-score {
     display: flex;
     flex-direction: column;
@@ -119,11 +132,13 @@ img {
     z-index: 99;
 
 }
+
 .alien-score img {
     width: 30px;
     margin-bottom: 5px;
     margin-left: 5px;
 }
+
 .total-score {
     position: absolute;
     left: 30px;
@@ -134,6 +149,7 @@ img {
     z-index: 99;
 
 }
+
 .gun-cont {
     top: 15px;
     position: absolute;
@@ -147,7 +163,8 @@ img {
     width: 25px;
     margin-left: 5px;
 }
-.gun-cont span{
+
+.gun-cont span {
     font-size: 1.5rem;
     color: yellow;
     margin-top: 10px;
@@ -163,11 +180,13 @@ ul {
     font-weight: bold;
     color: red;
 }
- ul li:hover {
+
+ul li:hover {
     cursor: pointer;
     transform: scale(1.5);
     transition: ease-in .5s;
 }
+
 .win-cont {
     font-size: 2rem;
     color: darkblue;
@@ -181,7 +200,8 @@ ul {
     border-radius: 20px;
     background-color: aliceblue;
 }
-.inp-name{
+
+.inp-name {
     height: 30px;
     border: none;
     background: lightgrey;
@@ -190,6 +210,7 @@ ul {
     text-align: center;
     margin-bottom: 10px;
 }
+
 .inp-apl {
     font-weight: 700;
     height: 35px;
@@ -202,6 +223,7 @@ ul {
     margin-top: 10px;
     text-align: center;
 }
+
 .win-cont form {
     text-align: center;
     font-size: 1.5rem;
@@ -212,7 +234,7 @@ ul {
     width: 200px;
     margin-top: 30px;
     margin-right: 22px;
- }
+}
 
 .end {
     font-size: 5rem;
@@ -239,14 +261,17 @@ ul {
     flex-direction: column;
     align-items: center;
 }
+
 .ul-records li {
     text-align: start;
     padding-left: 50px;
     padding-top: 10px;
 }
+
 .ul-records li:hover {
     transform: scale(1);
 }
+
 .back-btn {
     width: 100px;
     height: 50px;
@@ -257,6 +282,7 @@ ul {
     color: azure;
     cursor: pointer;
 }
+
 .end .back-btn {
     margin-top: 50px;
 }
