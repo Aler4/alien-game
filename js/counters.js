@@ -30,15 +30,15 @@ export class Count {
     }
      getAlienScore() {
          this.alienScoreCont.classList.add('alien-score')
-         this.alienScoreCont.innerHTML = ` <img src="../img/logo.png">${this.alienScore}/50`;
+         this.alienScoreCont.innerHTML = ` <img src="./img/logo.png">${this.alienScore}/50`;
          this.playground.append(this.alienScoreCont);
          return this.alienScore;
      }
 
      getGun() {
          this.gunCont.classList.add('gun-cont');
-         this.bullets.innerHTML = `${this.gun[1]} X <img src="../img/bullet.png">`;
-         this.clips.innerHTML = `${this.gun[0]} X <img src="../img/bullet-clip.png">`;
+         this.bullets.innerHTML = `${this.gun[1]} X <img src="./img/bullet.png">`;
+         this.clips.innerHTML = `${this.gun[0]} X <img src="./img/bullet-clip.png">`;
          this.gunCont.append(this.clips, this.bullets);
          this.playground.append(this.gunCont);
          return this.gun;

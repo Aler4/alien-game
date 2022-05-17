@@ -24,7 +24,7 @@ export class Game {
         if (this.count.getInstance().gun[1] > 0) {
             let shotSound = document.createElement('audio');
             shotSound.setAttribute("autoplay", "true");
-            shotSound.innerHTML = "<source src='../music/shot.mp3' type=\"audio/mpeg\">";
+            shotSound.innerHTML = "<source src='./music/shot.mp3' type=\"audio/mpeg\">";
             this.count.getInstance().gun[1] -=1;
             this.count.getInstance().getGun();
             document.body.append(shotSound);
@@ -40,7 +40,7 @@ export class Game {
             this.count.getInstance().gun[1] = 0;
             let empty = document.createElement('audio');
             empty.setAttribute("autoplay", "true");
-            empty.innerHTML = "<source src='../music/emptyShot.mp3' type=\"audio/mpeg\">";
+            empty.innerHTML = "<source src='./music/emptyShot.mp3' type=\"audio/mpeg\">";
             document.body.append(empty);
             setInterval( ()=> {empty.remove()}, 2000)
         }

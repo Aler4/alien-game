@@ -57,7 +57,7 @@ export class Target {
             this.point.style.top = -30 + '%';
 
             this.hitSound.setAttribute('autoplay', 'true');
-            this.hitSound.innerHTML = '<source src=\'../music/explsmal.mp3\' type="audio/mpeg">';
+            this.hitSound.innerHTML = '<source src=\'./music/explsmal.mp3\' type="audio/mpeg">';
             document.body.append(this.hitSound);
 
             this.count.getInstance().totalScore += Number(score);
@@ -126,7 +126,7 @@ export class DuckTarget extends Target {
         if (this.count.getInstance().gun[1] > 0) {
             super.hit(-25, 0);
             this.img.src = './img/duckShot.png';
-            this.hitSound.innerHTML = '<source src=\'../music/quack.mp3\' type="audio/mpeg">';
+            this.hitSound.innerHTML = '<source src=\'./music/quack.mp3\' type="audio/mpeg">';
         }
 
     }
@@ -168,7 +168,7 @@ export class Alien extends Target {
         if (this.count.getInstance().gun[1] > 0) {
             super.hit(score);
             this.img.src = './img/shotAlien.png';
-            this.hitSound.innerHTML = '<source src=\'../music/alienShot.mp3\' type="audio/mpeg">';
+            this.hitSound.innerHTML = '<source src=\'./music/alienShot.mp3\' type="audio/mpeg">';
         }
     }
 };
@@ -206,7 +206,7 @@ export class BoxSup extends Target {
 
         } else if (this.randomPrise < 5 && this.randomPrise !== 0) {
             this.count.getInstance().gun[0] += 1;
-            this.point.innerHTML = '+1 <img class="point-img" src="../img/bullet-clip.png">';
+            this.point.innerHTML = '+1 <img class="point-img" src="./img/bullet-clip.png">';
             this.count.getInstance().getGun();
         }
         if (this.randomPrise === 0) {
